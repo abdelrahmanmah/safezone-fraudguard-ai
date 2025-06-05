@@ -28,6 +28,18 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				// SafeZone brand colors
+				safezone: {
+					blue: '#0066FF',
+					'blue-dark': '#0052CC',
+					'blue-light': '#E6F0FF',
+					orange: '#FF6B35',
+					'orange-dark': '#E55A2B',
+					'orange-light': '#FFF1ED',
+					navy: '#1A2B42',
+					gray: '#64748B',
+					'gray-light': '#F8FAFC'
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
