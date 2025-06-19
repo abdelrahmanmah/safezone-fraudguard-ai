@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Play, TrendingUp } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-safezone-blue-light via-white to-safezone-orange-light overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-safezone-blue-light via-white to-safezone-orange-light overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-20 h-20 border-2 border-safezone-blue rounded-full"></div>
@@ -35,18 +33,11 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button 
-              size="lg" 
-              className="bg-safezone-blue hover:bg-safezone-blue-dark text-white px-8 py-4 text-lg font-semibold"
-            >
+            <Button size="lg" className="bg-safezone-blue hover:bg-safezone-blue-dark text-white px-8 py-4 text-lg font-semibold">
               <Play className="w-5 h-5 mr-2" />
               Try Demo
             </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="border-safezone-orange text-safezone-orange hover:bg-safezone-orange hover:text-white px-8 py-4 text-lg font-semibold"
-            >
+            <Button variant="outline" size="lg" className="border-safezone-orange text-safezone-orange hover:bg-safezone-orange hover:text-white px-8 py-4 text-lg font-semibold">
               Learn More
             </Button>
           </div>
@@ -63,7 +54,7 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center">
               <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-              <span className="font-semibold">99.9% Uptime</span>
+              <span className="font-semibold">99% Uptime</span>
             </div>
           </div>
         </div>
@@ -71,26 +62,12 @@ const HeroSection = () => {
 
       {/* Floating Elements */}
       <div className="absolute top-1/2 left-10 transform -translate-y-1/2 hidden lg:block">
-        <div className="bg-white rounded-xl shadow-lg p-4 border border-gray-200">
-          <div className="flex items-center space-x-2 mb-2">
-            <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-            <span className="text-sm font-medium text-safezone-navy">Fraud Alert</span>
-          </div>
-          <p className="text-xs text-safezone-gray">Suspicious transaction detected</p>
-        </div>
+        
       </div>
 
       <div className="absolute top-1/3 right-10 transform -translate-y-1/2 hidden lg:block">
-        <div className="bg-white rounded-xl shadow-lg p-4 border border-gray-200">
-          <div className="flex items-center space-x-2 mb-2">
-            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-            <span className="text-sm font-medium text-safezone-navy">Protected</span>
-          </div>
-          <p className="text-xs text-safezone-gray">Transaction verified</p>
-        </div>
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;

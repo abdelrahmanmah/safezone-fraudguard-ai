@@ -1,47 +1,72 @@
 import { Shield, Mail, Phone, MapPin } from "lucide-react";
-
 const Footer = () => {
   const footerLinks = {
     solution: {
       title: "Solution",
-      links: [
-        { name: "For Banks", href: "#banks" },
-        { name: "For Users", href: "#users" },
-        { name: "API Integration", href: "#api" },
-        { name: "Pricing", href: "#pricing" }
-      ]
+      links: [{
+        name: "For Banks",
+        href: "#banks"
+      }, {
+        name: "For Users",
+        href: "#users"
+      }, {
+        name: "API Integration",
+        href: "#api"
+      }, {
+        name: "Pricing",
+        href: "#pricing"
+      }]
     },
     resources: {
       title: "Resources",
-      links: [
-        { name: "Documentation", href: "#docs" },
-        { name: "API Reference", href: "#api-docs" },
-        { name: "White Papers", href: "#whitepapers" },
-        { name: "Case Studies", href: "#cases" }
-      ]
+      links: [{
+        name: "Documentation",
+        href: "#docs"
+      }, {
+        name: "API Reference",
+        href: "#api-docs"
+      }, {
+        name: "White Papers",
+        href: "#whitepapers"
+      }, {
+        name: "Case Studies",
+        href: "#cases"
+      }]
     },
     company: {
       title: "Company",
-      links: [
-        { name: "About Us", href: "#about" },
-        { name: "Careers", href: "#careers" },
-        { name: "News", href: "#news" },
-        { name: "Contact", href: "#contact" }
-      ]
+      links: [{
+        name: "About Us",
+        href: "#about"
+      }, {
+        name: "Careers",
+        href: "#careers"
+      }, {
+        name: "News",
+        href: "#news"
+      }, {
+        name: "Contact",
+        href: "#contact"
+      }]
     },
     legal: {
       title: "Legal",
-      links: [
-        { name: "Privacy Policy", href: "#privacy" },
-        { name: "Terms of Service", href: "#terms" },
-        { name: "Security", href: "#security" },
-        { name: "Compliance", href: "#compliance" }
-      ]
+      links: [{
+        name: "Privacy Policy",
+        href: "#privacy"
+      }, {
+        name: "Terms of Service",
+        href: "#terms"
+      }, {
+        name: "Security",
+        href: "#security"
+      }, {
+        name: "Compliance",
+        href: "#compliance"
+      }]
     }
   };
-
-  return (
-    <footer className="bg-safezone-navy text-white">
+  return <footer className="bg-safezone-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand Section */}
@@ -75,31 +100,22 @@ const Footer = () => {
           </div>
 
           {/* Links Sections */}
-          {Object.entries(footerLinks).map(([key, section]) => (
-            <div key={key}>
+          {Object.entries(footerLinks).map(([key, section]) => <div key={key}>
               <h3 className="font-semibold text-white mb-4">{section.title}</h3>
               <ul className="space-y-3">
-                {section.links.map((link, index) => (
-                  <li key={index}>
-                    <a 
-                      href={link.href} 
-                      className="text-gray-300 hover:text-safezone-orange transition-colors"
-                    >
+                {section.links.map((link, index) => <li key={index}>
+                    <a href={link.href} className="text-gray-300 hover:text-safezone-orange transition-colors">
                       {link.name}
                     </a>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
-            </div>
-          ))}
+            </div>)}
         </div>
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-300 mb-4 md:mb-0">
-              © 2024 SafeZone. All rights reserved.
-            </div>
+            <div className="text-gray-300 mb-4 md:mb-0">© 2025 SafeZone. All rights reserved.</div>
             
             {/* Social Links */}
             <div className="flex space-x-6">
@@ -116,8 +132,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
